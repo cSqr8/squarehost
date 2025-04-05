@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  padding: 0;
+  font-family: Bytesized;
+  width: 1000px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.Footers footer {
+  font-family: Bytesized;
+  position: inline;
+  font-size: 25px;
+  color: white;
+  position: relative;
+  top: 50px;
+  
+}
+
+.Footers p {
+  transform: translateY(10px);
+}
+
+label {
+  font-family: Bytesized;
+  color: white;
+  font-weight: bold;
+  margin-top: 80px;
+}
+
+.Fixed-Content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 360px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 0.1px solid #2e2e2e;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.Fixed-Content img {
+  width: 38.1px;
+  height: 38.1px;
+  position: fixed;
+  margin-top: 5px;
+}
+
+h2 {
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 55px;
+  margin-right: 55px;
+  padding: 0;
+  font-family: Bytesized;
+  font-size: 40px;
+}
+
+.Fixed-Content button {
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 51px;
+  font-size: 35px;
+  letter-spacing: -0.1;
+  background: transparent;
+  color: white;
+  border: none;
+  transform: translateX(-2px);
+}
+
+.anexo-sqr img {
+  position: relative;
+  transform: translateY(700px);
+  margin-left: 4px;
+  width: 100px;
+}
+
+.anexo-sqr label {
+  position: relative;
+  transform: translateY(200px);
+  margin-left: 3px;
+  font-size: 47px;
+}
+
+.aspas img {
+  position: relative;
+  transform: translateY(1364px) translateX(90px);
+  width: 57px;
+  font-family: Catamaran;
+  opacity: 0.98;
+}
+
+.aspas p {
+  font-family: Catamaran;
+  font-size: 23px;
+  font-weight: 560;
+  transform: translateY(660px) translateX(150px);
+  width: 50%;
+}
+
+span {
+  font-weight: 800;
+
+}
+
+.divers-ftrs footer {
+  font-family: Catamaran;
+  width: 100%;
+  color: gray;
+  transform: translateY(1500px);
+  text-align: center;
+  opacity: 0.1;
+}
+
+.Container-CC {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 12px 14px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  position: relative;
+  box-shadow: 0 0 10px #fff;
+  width: 325px;
+  height: 60px;
+  transform: translateX(15px) translateY(-7px);
+  margin: 0;
+  font-family: Catamaran;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.Container-CC:hover {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.Container-CC p {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  width: 150%;
+  margin-left: 38px;
+  transform: translateX(-35px);
+}
+
+.Container-CC img {
+  width: 35px;
+}
+
+.ibsquare {
+  font-family: Bytesized;
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  position: relative;
+  transform: translateY(-10.5px) translateX(100px);
+}
+
+.mins-care {
+  font-family: Arial;
+  width: 30%;
+  padding: 0;
+  font-weight: 460;
+  transform: translateY(-13px) translateX(25px);
+  text-align: center;
+  color: #4d4d4dd7;
+  background: transparent;
+}
+
+#Btn-Planos {
+  background: transparent;
+  border: 0.7px solid white;
+  padding: 0;
+  border-radius: 10px;
+  font-family: Catamaran;
+  font-weight: 560;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 15px #fff;
+  transform: translateY(15px) translateX(107px);
+  height: 43px;
+  width: 118px
+}
+
+#Btn-Planos:hover {
+  box-shadow: 0 0 26.1px #fff;
+}
+
+.cursor::after {
+  content: '|';
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.Text-Content {
+  font-family: Arial;
+  transform: translateY(85px) translateX(30px);
+  font-size: 40px;
+  font-weight: 560;
+  padding: 0;
+  width: 20%;
+}
+
+.Text-Content span {
+  font-weight: 600;
+}

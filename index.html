@@ -1,0 +1,90 @@
+<html lang="pt-BR">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="Login-Content">
+            <button onclick="https://discord.com/oauth2/authorize?client_id=1355945189914710106&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8158%2Findex.html&scope=identify+guilds+email+connections+guilds.join"></button>
+    </div>
+    <div class="Fixed-Content">
+            <img src="https://cdn.discordapp.com/attachments/1356741617033285845/1356742589461692506/Picsart_25-04-01_18-20-03-610.jpg?ex=67f0f840&is=67efa6c0&hm=6f3357200603f7c5d72bff71a8f469e64aa19ee1c8ee6f26c2fae2a5fa59d322&" alt="Square Host &&">
+            <h2>SQR</h2>
+            <button id="menu-btn">☰</button>
+            </div>
+            <script>
+              document.getElementById("menu-btn").addEventListener("click", function() {
+                window.location.href = "";
+              });
+            </script>
+            <div class="anexo-sqr">
+
+              <div class="aspas">
+              <img src="https://cdn.discordapp.com/attachments/1356741617033285845/1357291668746932304/1743673896120.png?ex=67efabdf&is=67ee5a5f&hm=cc36d2246c35d7cef55c3cc7cc11075c0eaabeaac4996cb9d56177357ffa253f&" alt="&squarehost&&12817" width="10px">
+              
+              </div>
+            </div>
+            <div class="divers-ftrs">
+              <footer>
+                <span>Square Host © Copyright 2024 · 2025</span>
+              </footer>
+            </div>
+            <div class="Container-CC">
+              <img src="https://cdn.discordapp.com/attachments/1356741617033285845/1357443551939793120/more_vert_55dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png?ex=67f03952&is=67eee7d2&hm=4675a547d1e4632b1fc727c43b51cd3a89b71cd1e6cd058a72125201db40279d&" alt="&">
+              <p>Banco de dados, Analisticas, Painel de Gerenciamento...</p>
+            </div>
+            <div class="ibsquare">
+              <span>Square</span>
+            </div>
+            <div class="mins-care">
+            <p>
+              Deixe seu negocio online com a Square Hosted! Implementado, ganhe uma db e um Painel de Gerenciamento exclusivo!
+              </p>
+            </div>
+            <div class="R-Planos">
+              <button id="Btn-Planos">Conferir</button>
+              <script>
+                document.getElementById("Btn-Planos").addEventListener("click", function() {
+                  window.location.href="";
+                });
+              </script>
+            </div>
+            
+            <div id="Text-Content" class="Text-Content">
+              Hospede seu <span id="changing" class="cursor"></span>!
+            </div>
+            <script>
+              const words = ["Twitch Bot", "Discord Bot", "Whatsapp Bot", "Telegram Bot", "Website"]
+              const changingEl = document.getElementById("changing");
+              let wordIndex = 0;
+              let letterIndex = 0;
+              let typing = true;
+              
+              function typeEffect() {
+                const word = words[wordIndex];
+                
+                if (typing) {
+                  changingEl.textContent = word.substring(0, letterIndex + 1);
+                  letterIndex++;
+                  if (letterIndex === word.length) {
+                    typing = false;
+                    setTimeout(typeEffect, 1000);
+                    return;
+                  }
+                } else {
+        changingEl.textContent = word.substring(0, letterIndex - 1);
+        letterIndex--;
+        if (letterIndex === 0) {
+          typing = true;
+          wordIndex = (wordIndex + 1) % words.length;
+                }
+              }
+              
+              setTimeout(typeEffect, 180);
+              }
+              
+              typeEffect();
+            </script>
+  </body>
+</html>
